@@ -10,7 +10,9 @@ engine = pyttsx3.init('sapi5')
 
 voices = engine.getProperty('voices')  # getting details of current voice
 # print(voices[0].id)
+# print(voices[1].id)
 engine.setProperty('voice', voices[0].id)
+# engine.setProperty('voice', voices[1].id)
 
 
 def speak(audio):
@@ -30,7 +32,8 @@ def wishMe():
     else:
         speak("Good Evening!")
 
-    speak("Hey There! This is Jarvis Sir. Please tell me how may I help you")
+    speak("Hey there! This is Jarvis. Please tell me how may I help you")
+    # speak("Hey there! This is Zira. Please tell me how may I help you")
 
 
 def takeCommand():

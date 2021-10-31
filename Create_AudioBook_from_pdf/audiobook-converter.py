@@ -1,4 +1,4 @@
-# install Libraries
+# install libraries
 # pip install PyPDF2
 # pip install pyttsx3
 
@@ -6,7 +6,8 @@
 import pyttsx3 
 import PyPDF2
 
-book = open('keyboard-shortcuts-windows.pdf','rb')    # rb stand for readingbook
+pdf_file = input("Enter full book name: ")
+book = open(pdf_file,'rb')    # rb stand for readingbook
 pdf_reader = PyPDF2.PdfFileReader(book)     # book store in pdf method
 num_pages = pdf_reader.numPages     # book store in num_pages method
 
